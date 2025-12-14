@@ -128,7 +128,7 @@ Just type what you need and I'll take care of it!`,
         const actionTexts: { [key: string]: string } = {
             "New Deals": "show me latest deals",
             "Orders": "show me my all orders",
-            "Status": "show me the payment status of my orders",
+            "Status": "show me the payment status",
             "Other": "i need support"
         };
         setInputValue(actionTexts[label] || label);

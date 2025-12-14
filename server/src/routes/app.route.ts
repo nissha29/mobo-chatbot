@@ -35,8 +35,13 @@ appRouter.post("/chat", async (req: express.Request, res: Response<ApiResponse>)
         try {
           const dealsUrl = `${BASE_URL}/api/app/deals?message=${encodeURIComponent(message)}`;
 
-          const dealsResponse = await fetch(dealsUrl);
+          const dealsResponse = await fetch(dealsUrl, {
+            headers: {
+              "Authorization": req.headers.authorization || ""
+            }
+          });
           const dealsResult = await dealsResponse.json() as ApiResponse;
+          console.log(dealsResult);
 
           if (!dealsResponse.ok) {
             throw new Error(dealsResult.message || "Failed to fetch deals");
