@@ -104,11 +104,6 @@ BASE_URL=http://localhost:8000
 GROQ_API_KEY=your-groq-api-key-here
 ```
 
-**For MongoDB Atlas**:
-```
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/chatbot
-```
-
 #### Frontend Configuration
 
 Update the API base URL in `client/src/lib/api.ts` if your backend runs on a different port or domain.
@@ -284,16 +279,6 @@ npm start
 - CORS configuration
 - Environment variable management
 
-## 🤝 Contributing
-
-1. Create a feature branch
-2. Make your changes
-3. Test thoroughly
-4. Submit a pull request
-
-## 📄 License
-
-This project is open source and available for use.
 
 ## 🆘 Troubleshooting
 

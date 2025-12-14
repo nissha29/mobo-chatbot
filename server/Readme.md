@@ -46,10 +46,6 @@ GROQ_API_KEY=your-groq-api-key-here
 ```
 
 **Note**: Get your Groq API key from [Groq Console](https://console.groq.com/)
-
-**Note**: For MongoDB Atlas, use:
-```
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/chatbot
 ```
 
 ### 3. Start MongoDB

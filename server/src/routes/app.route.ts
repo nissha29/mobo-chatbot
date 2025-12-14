@@ -8,7 +8,7 @@ import {
   getPayment,
   extractPriceRange,
   extractOrderFilters
-} from "../services/chatbotActions";
+} from "../services/chatbotActions.service";
 
 const BASE_URL = process.env.BASE_URL || `http://localhost:4000`;
 const appRouter = Router();
